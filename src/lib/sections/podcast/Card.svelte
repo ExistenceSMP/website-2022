@@ -84,6 +84,8 @@
 		display: inline-flex;
 		flex-direction: row-reverse;
 		margin: 0.5rem 0;
+		margin-bottom: 1rem;
+		opacity: 0.7;
 
 		.member {
 			display: block;

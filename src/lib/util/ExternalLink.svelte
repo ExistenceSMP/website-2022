@@ -5,7 +5,7 @@
 	export let target = '';
 </script>
 
-<a {href} {target}>
+<a class="external-link" {href} {target}>
 	<ExternalLinkIcon />
 	<slot />
 </a>
@@ -17,6 +17,6 @@
 		grid-gap: 0.5rem;
 		align-items: center;
 		text-decoration: none;
-		color: var(--text);
+		color: var(--text-secondary);
 	}
 </style>
