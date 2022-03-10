@@ -1,7 +1,26 @@
 <script>
+	import { browser } from '$app/env';
+
 	import '../app.scss';
 	import Header from '$lib/layout/Header.svelte';
+
+	import { theme } from '$lib/util/theme';
+
+	if (browser) {
+		if (window.localStorage.getItem('theme')) {
+			theme.set(window.localStorage.getItem('theme'));
+		} else {
+			window.matchMedia('(prefers-color-scheme: dark)').matches
+				? theme.set('dark')
+				: theme.set('light');
+		}
+	}
 </script>
+
+<svelte:head>
+	<meta name="color-scheme" content={$theme === 'system' ? 'light dark' : $theme} />
+	<link rel="stylesheet" href={`/styles/theme/${$theme}.css`} />
+</svelte:head>
 
 <div>
 	<Header />
@@ -9,29 +28,6 @@
 <slot />
 
 <style lang="scss" global>
-	:root {
-		--body: white;
-		--text: #171717;
-		--text-secondary: #4c4c4c;
-		--anchor: #1d9961;
-		--border: #e7e7e7;
-		--card-bg: var(--body);
-	}
-
-	:root {
-		--header-text-link: var(--text);
-	}
-
-	@media (prefers-color-scheme: dark) {
-		:root {
-			--body: #161925;
-			--text: white;
-			--text-secondary: #a8abbd;
-			--border: transparent;
-			--card-bg: #13141f;
-		}
-	}
-
 	body {
 		margin: 0;
 		font-family: 'Poppins', Arial;
