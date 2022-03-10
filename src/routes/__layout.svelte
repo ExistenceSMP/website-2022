@@ -4,7 +4,7 @@
 	import '../app.scss';
 	import Header from '$lib/layout/Header.svelte';
 
-	import { theme } from '$lib/util/theme';
+	import { theme } from '$lib/stores/theme';
 
 	if (browser) {
 		if (window.localStorage.getItem('theme')) {

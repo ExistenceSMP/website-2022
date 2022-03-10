@@ -4,7 +4,7 @@
 	import Moon from '$lib/icons/Moon.svelte';
 	import Sun from '$lib/icons/Sun.svelte';
 
-	import { theme } from './theme';
+	import { theme } from '$lib/stores/theme';
 
 	theme.subscribe((value) => {
 		if (browser) {
@@ -23,7 +23,7 @@
 
 <div class="theme-toggle">
 	<button on:click={toggleTheme}>
-		{#if $theme === 'dark'}
+		{#if $theme === 'dark' || $theme === 'system'}
 			<Moon />
 		{:else}
 			<Sun />
