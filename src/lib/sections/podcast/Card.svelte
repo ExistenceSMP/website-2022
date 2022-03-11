@@ -22,7 +22,9 @@
 					<img
 						class="member"
 						src={member.icon
-							? `https://existencesmp.com${member.icon}`
+							? member.icon.startsWith('/')
+								? `https://existencesmp.com${member.icon}`
+								: member.icon
 							: `https://www.existencesmp.com/images/members/${member.name}.png`}
 						alt={member.name}
 						title={member.name}
