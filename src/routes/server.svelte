@@ -3,7 +3,7 @@
 </script>
 
 <Section>
-	<h1 id="community">Existence SMP Community Server</h1>
+	<h1 id="community">Community Server</h1>
 
 	<div class="embedded">
 		<iframe

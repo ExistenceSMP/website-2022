@@ -78,11 +78,15 @@
 
 	p {
 		margin: 1rem 0;
+	}
+
+	.page-content,
+	p {
 		color: var(--text-secondary);
 	}
 
 	.anchor,
-	.svx a {
+	.page-content a {
 		color: var(--anchor);
 		text-decoration: none;
 		font-weight: bold;
@@ -93,7 +97,7 @@
 	}
 
 	.embedded iframe,
-	.svx iframe {
+	.page-content iframe {
 		width: 100%;
 		aspect-ratio: 16/9;
 	}

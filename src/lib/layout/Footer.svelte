@@ -3,7 +3,7 @@
 		>Jip Fr</a
 	>
 	and
-	<a class="anchor" href="https://igalaxy.dev" target="_blank" style="color: magenta;">iGalaxy</a>
+	<a class="anchor" href="https://igalaxy.dev/" target="_blank" style="color: magenta;">iGalaxy</a>
 	— Copyright {new Date().getFullYear()}
 </footer>
 
