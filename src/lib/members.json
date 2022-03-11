@@ -12,10 +12,6 @@
 		"link": "https://twitter.com/HeccinJake"
 	},
 	{
-		"name": "Noahh__",
-		"link": "https://www.youtube.com/channel/UCjlSCgWlJ_wtqcFjYbhAGFg"
-	},
-	{
 		"name": "KSores",
 		"link": "https://www.youtube.com/channel/UCh59oodOtwqWaY3LlvKhEnw"
 	},
@@ -53,7 +49,7 @@
 		"link": "https://www.youtube.com/SkyTheUnaccompaniedMiner"
 	},
 	{
-		"name": "Acg 1000",
+		"name": "acg1000",
 		"creator": true,
 		"link": "https://twitter.com/Acg1000_",
 		"icon": "/images/creators/acg.png",
@@ -149,11 +145,11 @@
 		"link": "https://www.youtube.com/channel/UCzTmHdyJB0ZS2U7oQsXmEmQ"
 	},
 	{
-		"name": "Noahh__",
-		"link": "https://www.youtube.com/channel/UC4FpYZdkeNHW4U_l-srit8w",
+		"name": "kindabland",
+		"link": "https://www.youtube.com/c/kindabland",
 		"creator": false,
 		"icon": "/images/creators/noah.jpg",
-		"twitch": "https://www.twitch.tv/noahlot",
+		"twitch": "https://www.twitch.tv/kindabland",
 		"twitter": "https://twitter.com/kindabland/"
 	},
 	{
