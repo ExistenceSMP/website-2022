@@ -37,10 +37,6 @@
 		--card-bg: var(--body);
 	}
 
-	:root {
-		--header-text-link: var(--text);
-	}
-
 	@mixin dark {
 		--body: #161925;
 		--text: white;
@@ -58,6 +54,10 @@
 		[data-theme='system'] {
 			@include dark;
 		}
+	}
+
+	body {
+		--header-text-link: var(--text);
 	}
 
 	body {
