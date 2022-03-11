@@ -19,6 +19,13 @@
 			$theme === 'dark' ? theme.set('light') : theme.set('dark');
 		}
 	}
+
+	if (browser) {
+		window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+			const newColorScheme = event.matches ? 'dark' : 'light';
+			theme.set(newColorScheme);
+		});
+	}
 </script>
 
 <div class="theme-toggle">
