@@ -18,8 +18,8 @@
 </script>
 
 <svelte:head>
+	<meta name="theme-color" content="#FFAA00" />
 	<meta name="color-scheme" content={$theme === 'system' ? 'light dark' : $theme} />
-	<link rel="stylesheet" href={`/styles/theme/${$theme}.css`} />
 </svelte:head>
 
 <div>
@@ -28,6 +28,38 @@
 <slot />
 
 <style lang="scss" global>
+	:root {
+		--body: white;
+		--text: #171717;
+		--text-secondary: #4c4c4c;
+		--anchor: #1d9961;
+		--border: #e7e7e7;
+		--card-bg: var(--body);
+	}
+
+	:root {
+		--header-text-link: var(--text);
+	}
+
+	@mixin dark {
+		--body: #161925;
+		--text: white;
+		--text-secondary: #a8abbd;
+		--border: transparent;
+		--card-bg: #13141f;
+		--anchor: #1d9961;
+	}
+
+	[data-theme='dark'] {
+		@include dark;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		[data-theme='system'] {
+			@include dark;
+		}
+	}
+
 	body {
 		margin: 0;
 		font-family: 'Poppins', Arial;

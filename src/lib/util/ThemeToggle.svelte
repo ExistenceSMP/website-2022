@@ -9,6 +9,7 @@
 	theme.subscribe((value) => {
 		if (browser) {
 			window.localStorage.setItem('theme', value);
+			document.body.setAttribute('data-theme', value);
 		}
 	});
 
