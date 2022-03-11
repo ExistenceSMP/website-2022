@@ -7,7 +7,7 @@
 	export let large;
 </script>
 
-<div class="podcast-card" data-large={large}>
+<article class="podcast-card" data-large={large}>
 	<div class="top" style={`--img: url('/images/podcast/${podcast.id}.png')`}>
 		<h3 class="title">{podcast.name}</h3>
 		<p class="date">{podcast.date}</p>
@@ -33,7 +33,7 @@
 
 		<ExternalLink href={podcast.url} target="_blank">Watch on YouTube</ExternalLink>
 	</div>
-</div>
+</article>
 
 <style lang="scss">
 	.podcast-card {
