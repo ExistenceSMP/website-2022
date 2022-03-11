@@ -10,7 +10,7 @@
 	<slot />
 </a>
 
-<style>
+<style lang="scss">
 	a {
 		display: grid;
 		grid-template-columns: auto 1fr;

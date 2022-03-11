@@ -96,6 +96,13 @@
 		}
 	}
 
+	.page-content {
+		h1,
+		h2 {
+			color: var(--text);
+		}
+	}
+
 	.embedded iframe,
 	.page-content iframe {
 		width: 100%;

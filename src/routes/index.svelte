@@ -2,10 +2,9 @@
 	import Sanity from '$lib/../sanity';
 
 	/** @type {import('./[slug]').Load} */
-	export async function load({ params }) {
-		console.log(params.slug);
+	export async function load() {
 		const query = `{
-			"page": *[_type == 'page' && slug.current == '${params.slug}'][0],
+			"page": *[_type == 'page' && slug.current == '/'][0],
 		}`;
 
 		const data = await Sanity.fetch(query);
