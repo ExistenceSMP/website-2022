@@ -81,7 +81,8 @@
 		color: var(--text-secondary);
 	}
 
-	.anchor {
+	.anchor,
+	.svx a {
 		color: var(--anchor);
 		text-decoration: none;
 		font-weight: bold;
@@ -91,7 +92,8 @@
 		}
 	}
 
-	.embedded iframe {
+	.embedded iframe,
+	.svx iframe {
 		width: 100%;
 		aspect-ratio: 16/9;
 	}

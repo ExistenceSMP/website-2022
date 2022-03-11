@@ -1,0 +1,67 @@
+---
+carousel: true
+---
+
+<script>
+	import AllSocials from '$lib/AllSocials.svelte';
+</script>
+
+# Existence SMP
+
+Welcome to the Existence SMP Community! We're an Online Minecraft Community group established in March 2016.
+
+Over the past few years we've had 3 primary YouTube based series and are now focusing on creating a more open Minecraft community with our [Community Server](http://localhost:3000/server).
+
+## Our socials
+
+<AllSocials />
+
+## Community Server
+
+Following the release of Minecraft 1.16, we have opened our [Community Server](/server)!
+
+The Community Server is our whitelisted SMP for Patrons and Trusted members of the Existence Community
+
+Leading on from the sucsess of [Project Keystone](/server/keystone), the server is the home of Existence SMP for our new community-focused era
+
+Check out the trailer below and the server page for more info!
+
+<iframe
+	title="YouTube embed"
+	src="https://www.youtube.com/embed/KEX68MWD_-8"
+	frameborder="0"
+	allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+	allowfullscreen
+/>
+
+## Official Series
+
+Back in March 2016 we launched Existence SMP S1. 4 years later we have had 3 Official series, and 2 Project series
+
+Be sure to visit our [videos page](/videos) for playlist of past series and series. We are also working on a worlds page with more information about our past series
+
+A huge range of content can be found on our [YouTube channel](https://youtube.com/ExistenceSMP)
+
+Our Official series will always be a key part of Existence SMP history. Going forward we will be having a more community-focused content creation environment from our [Community Server](/server)
+
+<iframe
+	title="YouTube embed"
+	src="https://www.youtube.com/embed/videoseries?list=PLSFAhfRdE2oMIky9dSgsGmQmtFoyTkEmp"
+	frameborder="0"
+	allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+	allowfullscreen
+/>
+
+## Existence Podcast
+
+The Existence Podcast has been running since the start of Existence SMP Season 2. It features monthly episodes hosted by Existence SMP members and a range of guests. We like to use the podcast to keep community members up to date with current happenings behind the scenes and often talk about the latest Minecraft news and more. Just a casul podcast to listen to while sitting back, relaxing, getting some work done or playing a bit of Minecraft.
+
+Check the latest episodes on the [podcast](/podcast) page or the YouTube playlist below:
+
+<iframe
+	title="YouTube embed"
+	src="https://www.youtube.com/embed/videoseries?list=PLSFAhfRdE2oPj8DbOOJNOCHMx9JF6M9l3"
+	frameborder="0"
+	allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+	allowfullscreen
+/>
