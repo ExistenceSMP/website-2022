@@ -4,6 +4,7 @@
 
 	import '../app.scss';
 	import Header from '$lib/layout/Header.svelte';
+	import Footer from '$lib/layout/Footer.svelte';
 
 	import { theme } from '$lib/stores/theme';
 
@@ -26,7 +27,10 @@
 <div>
 	<Header />
 </div>
+
 <slot />
+
+<Footer />
 
 <style lang="scss" global>
 	:root {
@@ -66,7 +70,6 @@
 		font-family: 'Poppins', Arial;
 		background: var(--body);
 		color: var(--text);
-		margin-bottom: 200px;
 	}
 
 	h1 {
