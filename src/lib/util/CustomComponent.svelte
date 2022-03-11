@@ -1,6 +1,6 @@
 <script>
 	import AllSocials from '$lib/AllSocials.svelte';
-	import Podcast from '$lib/podcast.svelte';
+	import Podcast from '$lib/Podcast.svelte';
 
 	export let portableText;
 
