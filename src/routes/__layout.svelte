@@ -1,5 +1,4 @@
 <script>
-	// @ts-ignore
 	import { browser } from '$app/env';
 
 	import '../app.scss';

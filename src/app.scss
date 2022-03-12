@@ -1,10 +1,11 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
 :root {
 	--body: white;
 	--text: #171717;
 	--text-secondary: #4c4c4c;
 	--anchor: #1d9961;
 	--border: #e7e7e7;
-	--card-bg: var(--body);
+	--content: white;
 }
 
 @mixin dark {
@@ -12,7 +13,7 @@
 	--text: white;
 	--text-secondary: #a8abbd;
 	--border: transparent;
-	--card-bg: #13141f;
+	--content: #13141f;
 	--anchor: #1d9961;
 }
 
@@ -72,4 +73,9 @@ p {
 .page-content iframe {
 	width: 100%;
 	aspect-ratio: 16/9;
+}
+
+h1,
+h2 {
+	filter: brightness(35%);
 }

@@ -39,7 +39,7 @@
 
 <style lang="scss">
 	.podcast-card {
-		background: var(--card-bg);
+		background: var(--content);
 		border-radius: 0.5rem;
 		border: 1px solid var(--border);
 		overflow: hidden;
@@ -95,7 +95,7 @@
 			width: 2.5rem;
 			height: 2.5rem;
 			image-rendering: pixelated;
-			background: var(--border);
+			background: var(--body);
 		}
 
 		.member:not(:last-child) {

@@ -34,8 +34,7 @@
 	header {
 		width: 100%;
 		padding: 3rem 0 1.5rem;
-		border-bottom: 1px solid var(--border);
-		background: var(--card-bg);
+		background: var(--header-bg);
 
 		div {
 			display: flex;
@@ -53,6 +52,7 @@
 				text-decoration: none;
 				padding: 0 10px 10px;
 				border-bottom: 2px solid transparent;
+				filter: brightness(35%);
 
 				&.active {
 					border-bottom-color: var(--header-text-link);

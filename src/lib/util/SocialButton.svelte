@@ -17,10 +17,6 @@
 		color: var(--text);
 		--color: grey;
 
-		&:hover {
-			background: var(--content);
-		}
-
 		&[data-platform='youtube'] {
 			--color: #d72523;
 		}
