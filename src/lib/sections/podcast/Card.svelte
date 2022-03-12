@@ -25,7 +25,7 @@
 							? member.icon.startsWith('/')
 								? `https://existencesmp.com${member.icon}`
 								: member.icon
-							: `https://www.existencesmp.com/images/members/${member.name}.png`}
+							: `/images/members/${member.name}.png`}
 						alt={member.name}
 						title={member.name}
 					/>
@@ -55,7 +55,7 @@
 		.top {
 			color: white;
 			background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), var(--img),
-				url(https://www.existencesmp.com/images/header/header1.jpg);
+				url(/images/header/header1.jpg);
 			background-size: cover;
 			background-position: center;
 
