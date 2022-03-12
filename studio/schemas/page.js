@@ -30,7 +30,7 @@ export default {
 		},
 		{
 			name: 'color',
-			title: 'Theme color (leave empty for default)',
+			title: 'Theme color (nothing is applied when empty)',
 			type: 'string'
 		},
 		{

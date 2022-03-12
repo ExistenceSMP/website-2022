@@ -16,7 +16,8 @@
 
 	function runBrowserCheck() {
 		if (browser) {
-			let color = [255, 170, 0];
+			document.querySelectorAll('.colors').forEach((style) => style.remove());
+			let color;
 			if (page.color) {
 				// Stole this code from https://www.delftstack.com/howto/javascript/rgb-to-hex-javascript/, that's why it's weird
 				const hex = page.color;
@@ -27,7 +28,7 @@
 			}
 
 			// @ts-ignore idc
-			setBackgroundColor(color);
+			if (color) setBackgroundColor(color);
 		}
 	}
 </script>
