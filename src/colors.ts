@@ -26,7 +26,8 @@ export function setBackgroundColor(
 		--content-alt: ${transparentBg}; 
 		--content-alt2: ${altBg}; 
 		--text: ${colorGray};
-		--theme: ${themeColor}
+		--theme: ${themeColor};
+		--header-bg: var(--body);
 	`;
 
 	const style = document.createElement('style');

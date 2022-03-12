@@ -6,7 +6,7 @@
 	--anchor: #1d9961;
 	--border: #e7e7e7;
 	--content: white;
-	--header-bg: transparent;
+	--header-bg: var(--body);
 }
 
 @mixin dark {
