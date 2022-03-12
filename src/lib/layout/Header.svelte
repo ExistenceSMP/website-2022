@@ -1,33 +1,39 @@
 <script>
-	// @ts-ignore
-	import { page } from '$app/stores';
+	import { browser } from '$app/env';
 
 	import Container from '$lib/layout/Container.svelte';
-
 	import Logo from '$lib/util/Logo.svelte';
-	import ThemeToggle from '$lib/util/ThemeToggle.svelte';
+	import Nav from '$lib/layout/Nav.svelte';
+
+	let scrollTop = 0;
+	let navEl;
+	let navTop = 500;
+
+	function updatePosition() {
+		scrollTop = window.scrollY;
+		navTop = navEl?.offsetTop - scrollTop;
+	}
+
+	if (browser) {
+		window.addEventListener('scroll', () => {
+			updatePosition();
+		});
+		updatePosition();
+	}
 </script>
 
 <header>
 	<Container>
 		<Logo />
-
-		<div>
-			<nav>
-				<a sveltekit:prefetch class:active={$page.url.pathname === '/'} href="/"> About </a>
-				<a sveltekit:prefetch class:active={$page.url.pathname === '/server'} href="/server">
-					Server
-				</a>
-				<a sveltekit:prefetch class:active={$page.url.pathname === '/podcast'} href="/podcast">
-					Podcast
-				</a>
-				<a sveltekit:prefetch class:active={$page.url.pathname === '/downloads'} href="/podcast">
-					Downloads
-				</a>
-			</nav>
-			<ThemeToggle />
+		<div bind:this={navEl}>
+			<Nav />
 		</div>
 	</Container>
+	<div class="sticky" class:visible={navTop <= 0}>
+		<Container>
+			<Nav />
+		</Container>
+	</div>
 </header>
 
 <style lang="scss">
@@ -35,29 +41,17 @@
 		width: 100%;
 		padding: 3rem 0 1.5rem;
 		background: var(--header-bg);
+	}
+	.sticky {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		opacity: 0;
+		background: var(--body);
+		z-index: 10;
 
-		div {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
-
-			nav {
-				margin-top: 2rem;
-			}
-
-			nav a {
-				display: inline-block;
-				color: var(--header-text-link);
-				text-decoration: none;
-				padding: 0 10px 10px;
-				border-bottom: 2px solid transparent;
-				filter: brightness(35%);
-
-				&.active {
-					border-bottom-color: var(--header-text-link);
-				}
-			}
+		&.visible {
+			opacity: 1;
 		}
 	}
 </style>
