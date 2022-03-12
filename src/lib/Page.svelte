@@ -16,7 +16,19 @@
 
 	function runBrowserCheck() {
 		if (browser) {
-			const color = page.color ?? [255, 170, 0];
+			console.log(page, page.color);
+
+			let color = [255, 170, 0];
+			if (page.color) {
+				// Stole this code from https://www.delftstack.com/howto/javascript/rgb-to-hex-javascript/, that's why it's weird
+				const hex = page.color;
+				const red = parseInt(hex[1] + hex[2], 16);
+				const green = parseInt(hex[3] + hex[4], 16);
+				const blue = parseInt(hex[5] + hex[6], 16);
+				color = [red, green, blue];
+			}
+
+			// @ts-ignore idc
 			setBackgroundColor(color);
 		}
 	}
