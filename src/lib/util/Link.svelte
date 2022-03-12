@@ -1,7 +1,4 @@
 <script>
-	import ExternalLink from '$lib/util/ExternalLink.svelte';
-	import Header from '$lib/layout/Header.svelte';
-
 	export let portableText;
 </script>
 
