@@ -29,6 +29,11 @@ export default {
 			type: 'boolean'
 		},
 		{
+			name: 'color',
+			title: 'Theme color (leave empty for default)',
+			type: 'string'
+		},
+		{
 			name: 'body',
 			title: 'Body',
 			type: 'blockContent'
