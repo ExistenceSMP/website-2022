@@ -59,5 +59,25 @@
 {/if}
 
 {#if !page}
-	Not found?
+	<Section>
+		<h1>404: Page Not Found</h1>
+		<p>
+			How did you get here? Maybe let one of our Admins know in our <a
+				href="https://existencesmp.com/discord"
+				target="_blank"
+			>
+				Discord Server
+			</a>
+		</p>
+
+		<div class="embedded">
+			<iframe
+				title="Hamsters?"
+				src="https://www.youtube.com/embed/p3G5IXn0K7A?autoplay=1"
+				frameborder="0"
+				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			/>
+		</div>
+	</Section>
 {/if}

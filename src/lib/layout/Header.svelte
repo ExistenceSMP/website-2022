@@ -47,11 +47,13 @@
 		width: 100%;
 		top: 0;
 		opacity: 0;
+		pointer-events: none;
 		background: var(--header-bg);
 		z-index: 10;
 
 		&.visible {
 			opacity: 1;
+			pointer-events: initial;
 		}
 	}
 </style>
