@@ -20,21 +20,29 @@ export function setBackgroundColor(
 	const themeColor = rgba(...theme, 1);
 
 	// Inject colors into DOM
-	document.body.setAttribute(
-		'style',
-		`
+	// This is so dumb
+	const colorStr = `
 		--body: ${bodyBg}; 
 		--content-alt: ${transparentBg}; 
 		--content-alt2: ${altBg}; 
 		--text: ${colorGray};
 		--theme: ${themeColor}
-		`
-	);
+	`;
 
-	// Force titles to take the color
-	document.querySelectorAll('h1').forEach((title) => {
-		title.style.color = `rgb(${rgb.join(', ')})`;
-	});
+	const style = document.createElement('style');
+	style.classList.add('colors');
+	style.innerHTML = `
+	[data-theme="light"] {
+		${colorStr}
+	}
+	@media (prefers-color-scheme: light) {
+		[data-theme="system"] {
+			${colorStr}
+		}
+	}
+	`;
+	document.querySelectorAll('.colors').forEach((style) => style.remove());
+	document.body.appendChild(style);
 }
 
 export function rgba(r, g, b, a, base = 'white') {

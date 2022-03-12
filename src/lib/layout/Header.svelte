@@ -47,7 +47,7 @@
 		width: 100%;
 		top: 0;
 		opacity: 0;
-		background: var(--body);
+		background: var(--header-bg, var(--body));
 		z-index: 10;
 
 		&.visible {

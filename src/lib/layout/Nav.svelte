@@ -1,7 +1,6 @@
 <script>
 	import { page } from '$app/stores';
 
-	import Container from '$lib/layout/Container.svelte';
 	import ThemeToggle from '$lib/util/ThemeToggle.svelte';
 </script>
 
@@ -38,7 +37,6 @@
 			text-decoration: none;
 			padding: 0 10px 10px;
 			border-bottom: 2px solid transparent;
-			filter: brightness(35%);
 
 			&.active {
 				border-bottom-color: var(--header-text-link);

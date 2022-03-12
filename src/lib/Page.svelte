@@ -16,8 +16,6 @@
 
 	function runBrowserCheck() {
 		if (browser) {
-			console.log(page, page.color);
-
 			let color = [255, 170, 0];
 			if (page.color) {
 				// Stole this code from https://www.delftstack.com/howto/javascript/rgb-to-hex-javascript/, that's why it's weird

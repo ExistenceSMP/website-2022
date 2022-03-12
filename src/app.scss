@@ -6,6 +6,7 @@
 	--anchor: #1d9961;
 	--border: #e7e7e7;
 	--content: white;
+	--header-bg: transparent;
 }
 
 @mixin dark {
@@ -15,6 +16,7 @@
 	--border: transparent;
 	--content: #13141f;
 	--anchor: #1d9961;
+	--header-bg: var(--content);
 }
 
 [data-theme='dark'] {
@@ -76,7 +78,20 @@ p {
 	background: var(--content);
 }
 
-h1,
-h2 {
-	filter: brightness(35%);
+[data-theme='light'] {
+	h1,
+	h2,
+	nav a {
+		filter: brightness(35%);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	[data-theme='system'] {
+		h1,
+		h2,
+		nav a {
+			filter: brightness(35%);
+		}
+	}
 }
