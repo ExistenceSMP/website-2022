@@ -55,7 +55,7 @@ p {
 
 .anchor,
 .page-content a {
-	color: var(--anchor);
+	color: var(--theme, var(--anchor));
 	text-decoration: none;
 	font-weight: bold;
 
