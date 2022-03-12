@@ -1,1 +1,75 @@
-/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
+:root {
+	--body: white;
+	--text: #171717;
+	--text-secondary: #4c4c4c;
+	--anchor: #1d9961;
+	--border: #e7e7e7;
+	--card-bg: var(--body);
+}
+
+@mixin dark {
+	--body: #161925;
+	--text: white;
+	--text-secondary: #a8abbd;
+	--border: transparent;
+	--card-bg: #13141f;
+	--anchor: #1d9961;
+}
+
+[data-theme='dark'] {
+	@include dark;
+}
+
+@media (prefers-color-scheme: dark) {
+	[data-theme='system'] {
+		@include dark;
+	}
+}
+
+body {
+	--header-text-link: var(--text);
+}
+
+body {
+	margin: 0;
+	font-family: 'Poppins', Arial;
+	background: var(--body);
+	color: var(--text);
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+p {
+	margin: 1rem 0;
+}
+
+.page-content,
+p {
+	color: var(--text-secondary);
+}
+
+.anchor,
+.page-content a {
+	color: var(--anchor);
+	text-decoration: none;
+	font-weight: bold;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.page-content {
+	h1,
+	h2 {
+		color: var(--text);
+	}
+}
+
+.embedded iframe,
+.page-content iframe {
+	width: 100%;
+	aspect-ratio: 16/9;
+}

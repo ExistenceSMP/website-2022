@@ -9,7 +9,7 @@
 	export let page;
 </script>
 
-{#if page.carousel}
+{#if page && page.carousel}
 	<ImageCarousel />
 {/if}
 

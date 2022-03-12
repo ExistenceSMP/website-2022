@@ -3,7 +3,6 @@
 
 	/** @type {import('./[slug]').Load} */
 	export async function load({ params }) {
-		console.log(params.slug);
 		const query = `{
 			"page": *[_type == 'page' && slug.current == '${params.slug}'][0],
 		}`;
