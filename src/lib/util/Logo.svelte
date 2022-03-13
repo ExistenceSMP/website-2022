@@ -5,7 +5,6 @@
 
 	pageStore.subscribe((v) => {
 		page = v;
-		console.log(v);
 	});
 </script>
 
@@ -70,7 +69,9 @@
 			font-size: 1.5rem;
 		}
 
-		:global(svg) {
+		:global(svg),
+		:global(img) {
+			display: block;
 			width: 3rem;
 			height: 3rem;
 		}
