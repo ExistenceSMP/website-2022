@@ -82,7 +82,7 @@ p {
 	h1,
 	h2,
 	nav a {
-		filter: brightness(35%);
+		filter: brightness(25%);
 	}
 }
 
@@ -91,7 +91,16 @@ p {
 		h1,
 		h2,
 		nav a {
-			filter: brightness(35%);
+			filter: brightness(25%);
 		}
+	}
+}
+
+@media (max-width: 900px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+	h2 {
+		font-size: 1.2rem;
 	}
 }

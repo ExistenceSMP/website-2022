@@ -13,7 +13,7 @@ export function setBackgroundColor(
 	document.head.appendChild(meta);
 
 	// Define all colors
-	const bodyBg = rgba(...rgb, 0.1);
+	const bodyBg = rgba(...rgb, 0.03);
 	const transparentBg = `rgba(${rgb.join(', ')}, 0.1)`;
 	const altBg = `rgba(${rgb.join(', ')}, 0.1)`;
 	const colorGray = `rgba(${rgb.map((v) => Math.max(v, 0)).join(', ')}, 1)`;
