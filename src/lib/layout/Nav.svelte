@@ -27,6 +27,8 @@
 	.nav-container {
 		display: grid;
 		grid-template-columns: 1fr auto;
+		grid-gap: 1rem;
+		align-items: center;
 
 		.nav-wrapper {
 			position: relative;
