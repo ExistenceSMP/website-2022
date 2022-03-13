@@ -34,6 +34,11 @@ export default {
 			type: 'string'
 		},
 		{
+			name: 'logo',
+			title: 'Logo override SVG (leave empty for default)',
+			type: 'string'
+		},
+		{
 			name: 'body',
 			title: 'Body',
 			type: 'blockContent'

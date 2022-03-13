@@ -56,7 +56,7 @@
 				position: absolute;
 				right: -1px;
 				top: 0;
-				background: linear-gradient(to left, var(--body), transparent);
+				background: linear-gradient(to left, var(--header-bg), transparent);
 			}
 		}
 

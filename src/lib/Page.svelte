@@ -9,12 +9,15 @@
 
 	import PortableText from '@portabletext/svelte';
 
+	import { page as pageStore } from '$lib/stores/page';
+
 	export let page;
 
 	$: page, runBrowserCheck();
 	runBrowserCheck();
 
 	function runBrowserCheck() {
+		pageStore.set(page);
 		if (browser) {
 			document.querySelectorAll('.colors').forEach((style) => style.remove());
 			let color;

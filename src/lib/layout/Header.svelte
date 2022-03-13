@@ -41,6 +41,7 @@
 		width: 100%;
 		padding: 3rem 0 1.5rem;
 		background: var(--header-bg);
+		border-bottom: 1px solid var(--border);
 	}
 	.sticky {
 		position: fixed;
@@ -50,6 +51,7 @@
 		pointer-events: none;
 		background: var(--header-bg);
 		z-index: 10;
+		border-bottom: 1px solid var(--border);
 
 		&.visible {
 			opacity: 1;
