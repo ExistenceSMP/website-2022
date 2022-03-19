@@ -66,6 +66,7 @@
 			text-decoration: none;
 			padding: 0 10px 10px;
 			border-bottom: 2px solid transparent;
+			margin-right: 5px;
 
 			&.active {
 				border-bottom-color: var(--header-text-link);
