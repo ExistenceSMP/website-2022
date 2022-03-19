@@ -7,6 +7,14 @@
 
 	import { theme } from '$lib/stores/theme';
 
+	import { page as pageStore } from '$lib/stores/page';
+
+	let page;
+
+	pageStore.subscribe((v) => {
+		page = v;
+	});
+
 	if (browser) {
 		if (window.localStorage.getItem('theme')) {
 			theme.set(window.localStorage.getItem('theme'));
@@ -19,7 +27,7 @@
 </script>
 
 <svelte:head>
-	<meta name="theme-color" content="#22640e" />
+	<meta name="theme-color" content={page && page.color ? page.color : '#22640e'} />
 	<meta name="color-scheme" content={$theme === 'system' ? 'light dark' : $theme} />
 </svelte:head>
 

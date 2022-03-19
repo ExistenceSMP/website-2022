@@ -4,14 +4,6 @@ export function setBackgroundColor(
 ) {
 	if (!theme) theme = rgb;
 
-	// Set theme-color
-	document.querySelectorAll(`[name="theme-color"]`).forEach((el) => el.remove());
-	const meta = document.createElement('meta');
-	meta.setAttribute('name', 'theme-color');
-	meta.setAttribute('content', rgba(...rgb, 0.4));
-
-	document.head.appendChild(meta);
-
 	// Define all colors
 	const bodyBg = rgba(...rgb, 0.03);
 	const transparentBg = `rgba(${rgb.join(', ')}, 0.1)`;
