@@ -19,7 +19,7 @@
 </script>
 
 <svelte:head>
-	<meta name="theme-color" content="#FFAA00" />
+	<meta name="theme-color" content="#22640e" />
 	<meta name="color-scheme" content={$theme === 'system' ? 'light dark' : $theme} />
 </svelte:head>
 
