@@ -133,4 +133,10 @@
 	section h2 {
 		margin-top: 0;
 	}
+
+	@media (max-width: 900px) {
+		.layout {
+			grid-template-columns: 1fr;
+		}
+	}
 </style>
