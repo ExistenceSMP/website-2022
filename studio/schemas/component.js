@@ -16,6 +16,10 @@ export default {
 					{
 						title: 'Social media',
 						value: 'socials'
+					},
+					{
+						title: 'All world downloads',
+						value: 'downloads'
 					}
 				]
 			}

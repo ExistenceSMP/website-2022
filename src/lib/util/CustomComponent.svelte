@@ -1,5 +1,6 @@
 <script>
 	import AllSocials from '$lib/AllSocials.svelte';
+	import Downloads from '$lib/Downloads.svelte';
 	import Podcast from '$lib/Podcast.svelte';
 
 	export let portableText;
@@ -19,6 +20,8 @@
 	<AllSocials />
 {:else if componentName === 'podcasts'}
 	<Podcast />
+{:else if componentName === 'downloads'}
+	<Downloads />
 {:else}
 	<strong class="error">———— Component '{componentName}' not found ————</strong>
 {/if}

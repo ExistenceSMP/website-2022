@@ -3,11 +3,14 @@
 
 	export let href;
 	export let target = '';
+	export let download = false;
 </script>
 
-<a class="external-link" {href} {target}>
+<a class="external-link" {href} {target} {download}>
 	<ExternalLinkIcon />
-	<slot />
+	<div>
+		<slot />
+	</div>
 </a>
 
 <style lang="scss">
@@ -18,5 +21,6 @@
 		align-items: center;
 		text-decoration: none;
 		color: var(--text-secondary);
+		cursor: pointer;
 	}
 </style>
