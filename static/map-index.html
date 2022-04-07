@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+	<meta name="viewport"					content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<meta property="og:type" 				content="website" />
+	<meta property="og:url" 				content="https://map.existencesmp.com" />
+	<meta property="twitter:url" 			content="https://map.existencesmp.com" />
+	<meta name="twitter:card" 				content="summary_large_image" />
+	
+	<meta name="keywords" 					content="Existence, SMP, Community, Minecraft, Existence SMP Community, Existence Minecraft server, Existence Server, mcpeachpies, mcpeachpies server, Minecraft SMP, Minecraft Community">
+	
+	<meta name="author" 					content="SugarCaney">
+	<meta name="author" 					content="mcpeachpies">
+	<meta name="author" 					content="Jipfr">
+	<meta name="author" 					content="iGalaxy">
+	
+	<meta property="og:title" 				content="Existence SMP Community Server Map" />
+	<meta property="twtter:title" 			content="Existence SMP Community Server Map" />
+	<meta property="og:site_name" 			content="Existence SMP Community Server Map" />
+	
+	<meta name="description" 				content="Online dynamic map of the Existence SMP Community Server server">
+	<meta property="og:description" 		content="Online dynamic map of the Existence SMP Community Server server" />
+	<meta property="twitter:description" 	content="Online dynamic map of the Existence SMP Community Server server" />
+
+	<meta property="og:image" 				content="https://existencesmp.com/images/previews/map-preview-community.jpg" />
+	<meta property="twitter:image" 			content="https://existencesmp.com/images/previews/map-preview-community.jpg" />
+	
+	<meta name="theme-color" 				content="#00AA00">
+
+    <title>Existence SMP Community Server Map</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../images/server-icon.png"/>
+    <link rel="shortcut icon" type="image/png" href="https://existencesmp.com/images/server-icon.png"/>
+
+	<!-- These 2 lines make us fullscreen on apple mobile products - remove if you don't like that -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />	
+
+	<script type="text/javascript" src="js/jquery-3.5.1.js?_=3.4-beta-3-774"></script>
+	<link rel="stylesheet" type="text/css" href="css/leaflet.css?_=3.4-beta-3-774" />
+	<script type="text/javascript" src="js/leaflet.js?_=3.4-beta-3-774"></script>
+    <!-- FOr source debug on leaflet 	<script type="text/javascript" src="js/leaflet-src.js?_=3.4-beta-3-774"></script> -->
+	<script type="text/javascript" src="js/custommarker.js?_=3.4-beta-3-774"></script>
+
+	<script type="text/javascript" src="js/dynmaputils.js?_=3.4-beta-3-774"></script>
+	<script type="text/javascript" src="js/sidebarutils.js?_=3.4-beta-3-774"></script>
+
+	<!--<link rel="stylesheet" type="text/css" href="css/embedded.css" media="screen" />-->
+	<link rel="stylesheet" type="text/css" href="css/standalone.css?_=3.4-beta-3-774" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/dynmap_style.css?_=3.4-beta-3-774" media="screen" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/override.css" media="screen" /> -->
+
+	<script type="text/javascript" src="version.js?_=3.4-beta-3-774"></script>
+	<script type="text/javascript" src="js/jquery.json.js?_=3.4-beta-3-774"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.js?_=3.4-beta-3-774"></script>
+	<script type="text/javascript" src="js/minecraft.js?_=3.4-beta-3-774"></script>
+	<script type="text/javascript" src="js/map.js?_=3.4-beta-3-774"></script>
+	<script type="text/javascript" src="js/hdmap.js?_=3.4-beta-3-774"></script>
+	<script type="text/javascript" src="standalone/config.js?_=3.4-beta-3-774"></script>
+
+	<script type="text/javascript">
+			$(document).ready(function() {
+				window.dynmap = new DynMap($.extend({
+					container: $('#mcmap')
+				}, config));
+			});
+	</script>
+
+</head>
+<body>
+<noscript>
+ For full functionality of this site it is necessary to enable JavaScript.
+ Here are the <a href="http://www.enable-javascript.com/" target="_blank">
+ instructions how to enable JavaScript in your web browser</a>.
+</noscript>
+
+	<div id="mcmap"></div>
+</body>
+</html>
