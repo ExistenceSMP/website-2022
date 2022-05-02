@@ -39,7 +39,7 @@
 			name: 'Project Hardcore S1',
 			icon: '/images/logos/existence-project-hardcore-s1-logo.png',
 			download: {
-				version: '1.12.2',
+				version: '1.13.2',
 				title: '.zip (148 MB)',
 				date: '2019-04-24',
 				url: '/images/logos/existence-project-hardcore-s1-logo.png'
@@ -59,9 +59,9 @@
 			name: 'Project Amplified',
 			icon: '/images/logos/existence-smp-project-amplified-logo.png',
 			download: {
-				version: '1.15.2',
+				version: '1.17.1',
 				title: '.zip (951.6 MB)',
-				date: '2020-06-27',
+				date: '2022-03-16',
 				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectAmplifiedS1.zip'
 			}
 		}
