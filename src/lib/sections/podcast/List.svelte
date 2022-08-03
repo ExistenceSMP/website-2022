@@ -6,7 +6,7 @@
 
 <div class="podcast-grid">
 	{#each Object.entries(podcasts) as [i, podcast]}
-		<PodcastCard {podcast} large={Number(i) === 0} />
+		<PodcastCard {podcast} large={Number(i) === 0} number={podcasts.length - Number(i)} />
 	{/each}
 </div>
 

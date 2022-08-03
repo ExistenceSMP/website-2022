@@ -5,12 +5,13 @@
 
 	export let podcast;
 	export let large;
+	export let number;
 </script>
 
 <article class="podcast-card" data-large={large}>
 	<div class="top" style={`--img: url('/images/podcast/${podcast.id}.png')`}>
 		<h3 class="title">{podcast.name}</h3>
-		<p class="date">{podcast.date}</p>
+		<p class="date">Episode {number} — {podcast.date}</p>
 	</div>
 	<div>
 		<p class="description">{podcast.description}</p>
