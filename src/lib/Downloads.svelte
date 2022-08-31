@@ -42,7 +42,7 @@
 				version: '1.13.2',
 				title: '.zip (148 MB)',
 				date: '2019-04-24',
-				url: '/images/logos/existence-project-hardcore-s1-logo.png'
+				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectHardcoreS1.zip'
 			}
 		},
 		{
