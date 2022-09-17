@@ -59,7 +59,7 @@
 			name: 'Project Amplified',
 			icon: '/images/logos/existence-smp-project-amplified-logo.png',
 			download: {
-				version: '1.17.1',
+				version: '1.18.1',
 				title: '.zip (951.6 MB)',
 				date: '2022-03-16',
 				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectAmplifiedS1.zip'
