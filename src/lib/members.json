@@ -166,7 +166,7 @@
 	},
 	{
 		"name": "iGalaxy",
-		"link": "https://www.youtube.com/channel/UC62WYRrDRwINxIjzj-wJVkQ",
+		"link": "https://link.igalaxy.dev/twitter",
 		"creator": true,
 		"icon": "/images/creators/galaxy.png",
 		"youtube": "https://link.igalaxy.dev/youtube",
@@ -212,5 +212,10 @@
 	{
 		"name": "Jippertje",
 		"icon": "https://minotar.net/armor/bust/Jippertje/190.png"
+	},
+	{
+		"name": "Yozuli",
+		"icon": "https://minotar.net/armor/bust/Uurt/190.png",
+		"link": "https://youtube.com/@Yozuli"
 	}
 ]
