@@ -28,6 +28,25 @@
 	}
 
 	if (browser) setImageUrls();
+
+	function scrollToPreview() {
+		if (!browser) return;
+		requestAnimationFrame(() => {
+			const img = document.querySelector(`[data-preview-index="${currentViewing}"]`);
+
+			img.parentNode.scrollTo({ left: 0 });
+			let rect = img.getBoundingClientRect();
+			let parentRect = img.parentNode.getBoundingClientRect();
+			const opts = {
+				left: Math.floor(rect.left - parentRect.left - parentRect.width / 2 + rect.width / 2)
+			};
+			img.parentNode.scrollTo(opts);
+			console.log(opts, rect);
+			console.log(img.parentNode);
+		});
+	}
+
+	$: currentViewing, scrollToPreview();
 </script>
 
 {#if allImageUrls.length > 0}
@@ -50,6 +69,17 @@
 		>
 			<ArrowRight />
 		</button>
+		<div class="full viewer-previews">
+			{#each Object.entries(allImageUrls) as [i, src]}
+				<img
+					{src}
+					class:current={Number(i) == currentViewing}
+					on:click={() => (currentViewing = Number(i))}
+					data-preview-index={i}
+					alt=""
+				/>
+			{/each}
+		</div>
 	</div>
 {/if}
 
@@ -90,6 +120,51 @@
 		img {
 			width: 100%;
 			opacity: 0;
+		}
+	}
+
+	.viewer-previews {
+		display: flex;
+		max-width: 100%;
+		overflow-x: auto;
+		overflow-y: visible;
+		gap: 5px;
+
+		&::-webkit-scrollbar-track {
+			background-color: var(--body);
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: var(--content);
+			border: 1px solid grey;
+			padding: 3px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			border-radius: 0.5rem;
+		}
+
+		&::-webkit-scrollbar {
+			width: 8px;
+			height: 8px;
+		}
+
+		img {
+			width: 100px;
+			border-radius: 4px;
+			cursor: pointer;
+
+			&.current {
+				border: 1px solid white;
+			}
+
+			&:first-child {
+				margin-left: calc(50% - 50px);
+			}
+
+			&:last-child {
+				margin-right: calc(50% - 50px);
+			}
 		}
 	}
 </style>
