@@ -2,6 +2,7 @@
 	import AllSocials from '$lib/AllSocials.svelte';
 	import Downloads from '$lib/Downloads.svelte';
 	import Podcast from '$lib/Podcast.svelte';
+	import WorldProgress from '$lib/WorldProgress.svelte';
 
 	export let portableText;
 
@@ -20,10 +21,10 @@
 	<AllSocials />
 {:else if componentName === 'podcasts'}
 	<Podcast />
-	{:else if componentName === 'downloads'}
+{:else if componentName === 'downloads'}
 	<Downloads />
-	{:else if componentName === 'world-progress'}
-	Coming soon...
+{:else if componentName === 'world-progress'}
+	<WorldProgress />
 {:else}
 	<strong class="error">———— Component '{componentName}' not found ————</strong>
 {/if}
