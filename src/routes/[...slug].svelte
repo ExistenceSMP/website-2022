@@ -1,7 +1,6 @@
 <script context="module">
 	import Sanity from '$lib/../sanity';
 
-	/** @type {import('../../.svelte-kit/types/src/routes/[slug]').Load} */
 	export async function load({ params }) {
 		const query = `{
 			"page": *[_type == 'page' && slug.current == '${params.slug || '/'}'][0],

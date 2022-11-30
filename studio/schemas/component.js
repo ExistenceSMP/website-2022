@@ -20,6 +20,10 @@ export default {
 					{
 						title: 'All world downloads',
 						value: 'downloads'
+					},
+					{
+						title: 'World progress',
+						value: 'world-progress'
 					}
 				]
 			}

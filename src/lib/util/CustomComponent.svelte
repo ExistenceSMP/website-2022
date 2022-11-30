@@ -20,8 +20,10 @@
 	<AllSocials />
 {:else if componentName === 'podcasts'}
 	<Podcast />
-{:else if componentName === 'downloads'}
+	{:else if componentName === 'downloads'}
 	<Downloads />
+	{:else if componentName === 'world-progress'}
+	Coming soon...
 {:else}
 	<strong class="error">———— Component '{componentName}' not found ————</strong>
 {/if}
