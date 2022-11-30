@@ -38,7 +38,12 @@
 		<button class:hidden={currentViewing <= 0} on:click={() => currentViewing--}>
 			<ArrowLeft />
 		</button>
-		<div class="image" style="--bg: url('{allImageUrls[currentViewing % allImageUrls.length]}')" />
+		<div class="image" style="--bg: url('{allImageUrls[currentViewing % allImageUrls.length]}')">
+			<img
+				src={allImages[currentViewing].src}
+				alt={`Week ${currentViewing} on Existence SMP Community Server 2`}
+			/>
+		</div>
 		<button
 			class:hidden={currentViewing >= allImageUrls.length - 1}
 			on:click={() => currentViewing++}
@@ -75,12 +80,16 @@
 	}
 	.viewer .image {
 		width: 100%;
-		aspect-ratio: 1028/643;
 		background-color: var(--border);
 		background-image: var(--bg);
 		background-size: cover;
 		background-position: center;
 		border-radius: 6px;
 		transition: background-image 200ms;
+
+		img {
+			width: 100%;
+			opacity: 0;
+		}
 	}
 </style>
