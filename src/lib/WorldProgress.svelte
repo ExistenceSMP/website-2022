@@ -69,17 +69,6 @@
 		>
 			<ArrowRight />
 		</button>
-		<div class="full viewer-previews">
-			{#each Object.entries(allImageUrls) as [i, src]}
-				<img
-					{src}
-					class:current={Number(i) == currentViewing}
-					on:click={() => (currentViewing = Number(i))}
-					data-preview-index={i}
-					alt=""
-				/>
-			{/each}
-		</div>
 	</div>
 {/if}
 
@@ -115,56 +104,11 @@
 		background-size: cover;
 		background-position: center;
 		border-radius: 6px;
-		transition: background-image 200ms;
+		transition: background-image 400ms;
 
 		img {
 			width: 100%;
 			opacity: 0;
-		}
-	}
-
-	.viewer-previews {
-		display: flex;
-		max-width: 100%;
-		overflow-x: auto;
-		overflow-y: visible;
-		gap: 5px;
-
-		&::-webkit-scrollbar-track {
-			background-color: var(--body);
-		}
-
-		&::-webkit-scrollbar-thumb {
-			background-color: var(--content);
-			border: 1px solid grey;
-			padding: 3px;
-		}
-
-		&::-webkit-scrollbar-thumb {
-			border-radius: 0.5rem;
-		}
-
-		&::-webkit-scrollbar {
-			width: 8px;
-			height: 8px;
-		}
-
-		img {
-			width: 100px;
-			border-radius: 4px;
-			cursor: pointer;
-
-			&.current {
-				border: 1px solid white;
-			}
-
-			&:first-child {
-				margin-left: calc(50% - 50px);
-			}
-
-			&:last-child {
-				margin-right: calc(50% - 50px);
-			}
 		}
 	}
 </style>
