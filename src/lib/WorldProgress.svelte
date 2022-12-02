@@ -12,7 +12,7 @@
 
 	async function setImageUrls() {
 		allImageUrls = Object.keys(imageModules)
-			.map((t) => t.split('static/').pop())
+			.map((t) => t.split('static').pop())
 			.sort((a, b) => {
 				const aIndex = Number(a.split('/').pop().split(' ')[0]);
 				const bIndex = Number(b.split('/').pop().split(' ')[0]);
