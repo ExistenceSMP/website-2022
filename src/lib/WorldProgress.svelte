@@ -28,25 +28,6 @@
 	}
 
 	if (browser) setImageUrls();
-
-	function scrollToPreview() {
-		if (!browser) return;
-		requestAnimationFrame(() => {
-			const img = document.querySelector(`[data-preview-index="${currentViewing}"]`);
-
-			img.parentNode.scrollTo({ left: 0 });
-			let rect = img.getBoundingClientRect();
-			let parentRect = img.parentNode.getBoundingClientRect();
-			const opts = {
-				left: Math.floor(rect.left - parentRect.left - parentRect.width / 2 + rect.width / 2)
-			};
-			img.parentNode.scrollTo(opts);
-			console.log(opts, rect);
-			console.log(img.parentNode);
-		});
-	}
-
-	$: currentViewing, scrollToPreview();
 </script>
 
 {#if allImageUrls.length > 0}
