@@ -8,6 +8,14 @@
 	let allImages = [];
 	let currentViewing = 0;
 
+	function setImgSource(i) {
+		// Used to load in order
+		allImages[i].src = allImages[i].getAttribute('data-src');
+		allImages[i].addEventListener('load', () => {
+			if (i > 0) setImgSource(i - 1);
+		});
+	}
+
 	async function setImageUrls() {
 		allImageUrls = (
 			await fetch('https://existence-smp-discord-bot.hop.sh/').then((res) => res.json())
@@ -18,9 +26,13 @@
 		allImages = allImageUrls.map((url) => {
 			// The reason for using `Image` here is so that it pre-loads and can transition
 			const img = new Image();
-			img.src = url;
+			img.src =
+				'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAQAAACRI2S5AAAAEElEQVR42mNkIAAYRxWAAQAG9gAKqv6+AwAAAABJRU5ErkJggg==';
+			img.setAttribute('data-src', url);
 			return img;
 		});
+
+		setImgSource(allImages.length - 1);
 	}
 
 	if (browser) setImageUrls();
