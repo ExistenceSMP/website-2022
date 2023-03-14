@@ -1,8 +1,6 @@
 <script>
 	import { browser } from '$app/env';
 
-	const imageModules = import.meta.globEager('../../static/images/cs2-progress/*.png');
-
 	import ArrowLeft from './icons/ArrowLeft.svelte';
 	import ArrowRight from './icons/ArrowRight.svelte';
 
@@ -11,16 +9,14 @@
 	let currentViewing = 0;
 
 	async function setImageUrls() {
-		allImageUrls = Object.keys(imageModules)
-			.map((t) => t.split('static').pop())
-			.sort((a, b) => {
-				const aIndex = Number(a.split('/').pop().split(' ')[0]);
-				const bIndex = Number(b.split('/').pop().split(' ')[0]);
-				return aIndex - bIndex;
-			});
+		allImageUrls = (
+			await fetch('https://existence-smp-discord-bot.hop.sh/').then((res) => res.json())
+		).data.map((t) => t.imageUrl);
+		console.log(allImageUrls);
 		currentViewing = allImageUrls.length - 1;
 
 		allImages = allImageUrls.map((url) => {
+			// The reason for using `Image` here is so that it pre-loads and can transition
 			const img = new Image();
 			img.src = url;
 			return img;
@@ -80,6 +76,8 @@
 	}
 	.viewer .image {
 		width: 100%;
+		aspect-ratio: 16/9;
+		object-fit: cover;
 		background-color: var(--border);
 		background-image: var(--bg);
 		background-size: cover;
@@ -89,6 +87,7 @@
 
 		img {
 			width: 100%;
+			aspect-ratio: 16/9;
 			opacity: 0;
 		}
 	}
