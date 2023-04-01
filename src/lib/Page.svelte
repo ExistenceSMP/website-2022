@@ -20,18 +20,18 @@
 		pageStore.set(page);
 		if (browser) {
 			document.querySelectorAll('.colors').forEach((style) => style.remove());
-			let color;
-			if (page.color) {
-				// Stole this code from https://www.delftstack.com/howto/javascript/rgb-to-hex-javascript/, that's why it's weird
-				const hex = page.color;
-				const red = parseInt(hex[1] + hex[2], 16);
-				const green = parseInt(hex[3] + hex[4], 16);
-				const blue = parseInt(hex[5] + hex[6], 16);
-				color = [red, green, blue];
-			}
+			// let color;
+			// if (page.color) {
+			// 	// Stole this code from https://www.delftstack.com/howto/javascript/rgb-to-hex-javascript/, that's why it's weird
+			// 	const hex = page.color;
+			// 	const red = parseInt(hex[1] + hex[2], 16);
+			// 	const green = parseInt(hex[3] + hex[4], 16);
+			// 	const blue = parseInt(hex[5] + hex[6], 16);
+			// 	color = [red, green, blue];
+			// }
 
-			// @ts-ignore idc
-			if (color) setBackgroundColor(color);
+			// // @ts-ignore idc
+			// if (color) setBackgroundColor(color);
 		}
 	}
 </script>

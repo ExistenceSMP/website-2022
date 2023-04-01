@@ -3,12 +3,12 @@
 	--body: white;
 	--text: #171717;
 	--text-secondary: #4c4c4c;
-	--anchor: #1d9961;
+	--anchor: #9246e8;
 	--border: #e7e7e7;
 	--content: white;
 	--header-bg: var(--body);
 	// --theme: #ffaa00;
-	--theme: #22640e;
+	--theme: #7629cc;
 }
 
 @mixin dark {
@@ -17,7 +17,7 @@
 	--text-secondary: #a8abbd;
 	--border: transparent;
 	--content: #13141f;
-	--anchor: #1d9961;
+	--anchor: #9246e8;
 	--header-bg: var(--content);
 }
 
