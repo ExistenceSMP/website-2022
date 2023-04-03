@@ -22,9 +22,6 @@
 	}
 </script>
 
-<div style="background-color: #7629CC;">
-	<marquee>As of April 1st, 2023, ItsPurpleJay is now our supreme leader!</marquee>
-</div>
 <header>
 	<Container>
 		<Logo />

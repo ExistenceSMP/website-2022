@@ -27,7 +27,7 @@
 </script>
 
 <svelte:head>
-	<meta name="theme-color" content={page && page.color ? page.color : '#7629cc'} />
+	<meta name="theme-color" content={page && page.color ? page.color : '#22640e'} />
 	<meta name="color-scheme" content={$theme === 'system' ? 'light dark' : $theme} />
 </svelte:head>
 
