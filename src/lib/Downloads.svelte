@@ -3,7 +3,7 @@
 
 	const legacyWorlds = [
 		{
-			name: 'Existence SMP S1',
+			name: 'Legacy S1',
 			icon: '/images/logos/existence-s1-logo.png',
 			download: {
 				version: '1.12.2',
@@ -13,7 +13,7 @@
 			}
 		},
 		{
-			name: 'Existence SMP S2',
+			name: 'Legacy S2',
 			icon: '/images/logos/existence-s2-logo.png',
 			download: {
 				version: '1.13.2',
@@ -23,7 +23,7 @@
 			}
 		},
 		{
-			name: 'Existence SMP S3',
+			name: 'Legacy S3',
 			icon: '/images/logos/existence-s3-logo.png',
 			download: {
 				version: '1.15.2',
@@ -64,18 +64,41 @@
 				date: '2022-03-16',
 				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectAmplifiedS1.zip'
 			}
+		},
+		{
+			name: 'Project Create',
+			icon: '/images/logos/existence-smp-project-create-logo.png',
+			download: {
+				version: '1.18.2 (Modded)',
+				title: '.zip (1.9 GB)',
+				date: '2023-06-05',
+				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectCreateS1.zip'
+			}
 		}
 	];
 
 	const communityWorlds = [
 		{
-			name: 'Existence SMP Community Server S1',
+			name: 'Community Server 1',
 			icon: '/images/logos/existence-smp-community-server-s1-logo.png',
 			download: {
 				version: '1.17.1',
 				title: '.zip (2.63 GB)',
 				date: '2021-12-01',
 				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPCommunityS1.zip'
+			}
+		}
+	];
+
+	const modpacks = [
+		{
+			name: 'Project Create',
+			icon: '/images/logos/existence-smp-project-create-logo.png',
+			download: {
+				version: '1.18.2',
+				title: '.mrpack (2.2 GB)',
+				date: '2023-06-05',
+				url: 'https://downloads.existencesmp.com/files/modpacks/ExistenceSMPProjectCreateS1.mrpack'
 			}
 		}
 	];
@@ -106,6 +129,15 @@
 			<div class="worlds">
 				{#each communityWorlds as world}
 					<WorldCard {world} />
+				{/each}
+			</div>
+		</section>
+
+		<section class="full-width">
+			<h2>Modpacks</h2>
+			<div class="worlds">
+				{#each modpacks as world}
+					<WorldCard {world} download={'modpack'} />
 				{/each}
 			</div>
 		</section>

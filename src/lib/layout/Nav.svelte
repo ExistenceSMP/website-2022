@@ -11,9 +11,6 @@
 			<a sveltekit:prefetch class:active={$page.url.pathname === '/server'} href="/server">
 				Server
 			</a>
-			<a sveltekit:prefetch class:active={$page.url.pathname === '/server/create'} href="/server/create">
-				Project Create
-			</a>
 			<a sveltekit:prefetch class:active={$page.url.pathname === '/podcast'} href="/podcast">
 				Podcast
 			</a>

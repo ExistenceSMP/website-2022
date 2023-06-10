@@ -2,6 +2,7 @@
 	import ExternalLink from '$lib/util/ExternalLink.svelte';
 
 	export let world;
+	export let download = 'world';
 </script>
 
 <article class="world-card">
@@ -16,7 +17,7 @@
 				{world.download.date} • {world.download.version} • {world.download.title}
 			</p>
 			<ExternalLink href={world.download.url} download={world.name} target="_blank">
-				Download world
+				Download {download}
 			</ExternalLink>
 		{/if}
 	</main>
