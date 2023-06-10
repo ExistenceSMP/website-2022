@@ -96,7 +96,7 @@
 			icon: '/images/logos/existence-smp-project-create-logo.png',
 			download: {
 				version: '1.18.2',
-				title: '.mrpack (2.2 GB)',
+				title: '.mrpack (2.2 GB, worlds included)',
 				date: '2023-06-05',
 				url: 'https://downloads.existencesmp.com/files/modpacks/ExistenceSMPProjectCreateS1.mrpack'
 			}
