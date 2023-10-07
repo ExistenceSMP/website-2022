@@ -53,7 +53,7 @@
 			>
 		</svg>
 	{/if}
-	<h2>Existence SMP</h2>
+	<h2>Existence Community</h2>
 </div>
 
 <style lang="scss">

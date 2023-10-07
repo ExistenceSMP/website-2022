@@ -85,7 +85,7 @@
 		<div class="image" style="--bg: url('{allImageUrls[currentViewing % allImageUrls.length]}')">
 			<img
 				src={allImages[currentViewing].src}
-				alt={`Week ${currentViewing} on Existence SMP Community Server 2`}
+				alt={`Week ${currentViewing} on Existence Community Server 2`}
 			/>
 		</div>
 		<button
