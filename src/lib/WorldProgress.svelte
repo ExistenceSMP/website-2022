@@ -16,7 +16,7 @@
 
 	async function setImageUrls() {
 		allImageUrls = (
-			await fetch('https://existence-smp-discord-bot.hop.sh/').then((res) => res.json())
+			await fetch('https://discord-bot-legacy.fly.dev/').then((res) => res.json())
 		).data.map((t) => t.imageUrl);
 		currentViewing = allImageUrls.length - 1;
 
