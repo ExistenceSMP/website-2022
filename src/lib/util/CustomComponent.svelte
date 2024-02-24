@@ -18,7 +18,11 @@
 		allowfullscreen
 	/>
 {:else if portableText.block.url && portableText.block.alt && portableText.block._type === 'customImage'}
-	<img src={portableText.block.url} alt={portableText.block.alt} />
+	<img
+		src={portableText.block.url}
+		alt={portableText.block.alt}
+		style="width: 100%; max-width: 800px;"
+	/>
 {:else if componentName === 'socials'}
 	<AllSocials />
 {:else if componentName === 'podcasts'}
