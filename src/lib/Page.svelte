@@ -53,6 +53,7 @@
 					},
 					types: {
 						youtube: CustomComponent,
+						customImage: CustomComponent,
 						component: CustomComponent
 					}
 				}}

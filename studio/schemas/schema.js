@@ -9,7 +9,7 @@ import blockContent from './blockContent';
 import category from './category';
 import page from './page';
 import youtube from './youtube';
-import image from './image';
+import customImage from './customImage';
 import component from './component';
 import author from './author';
 
@@ -25,7 +25,7 @@ export default createSchema({
 		page,
 		author,
 		youtube,
-		image,
+		customImage,
 		component,
 		category,
 		// When added to this list, object types can be used as

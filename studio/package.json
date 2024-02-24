@@ -7,8 +7,8 @@
   "author": "Jip Frijlink <jipfrijlink@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "npx sanity start",
-    "build": "npx sanity build"
+    "start": "sanity start",
+    "build": "sanity build"
   },
   "keywords": [
     "sanity"

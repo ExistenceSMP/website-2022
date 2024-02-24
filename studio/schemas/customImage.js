@@ -1,5 +1,5 @@
 export default {
-	name: 'image',
+	name: 'customImage',
 	type: 'object',
 	title: 'Image embed',
 	fields: [

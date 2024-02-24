@@ -56,7 +56,7 @@ export default {
 			type: 'youtube'
 		},
 		{
-			type: 'image'
+			type: 'customImage'
 		},
 		{
 			type: 'component'

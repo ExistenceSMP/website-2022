@@ -17,7 +17,7 @@
 		allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 		allowfullscreen
 	/>
-{:else if portableText.block.url && portableText.block.alt && portableText.block._type === 'image'}
+{:else if portableText.block.url && portableText.block.alt && portableText.block._type === 'customImage'}
 	<img src={portableText.block.url} alt={portableText.block.alt} />
 {:else if componentName === 'socials'}
 	<AllSocials />
