@@ -56,6 +56,9 @@ export default {
 			type: 'youtube'
 		},
 		{
+			type: 'image'
+		},
+		{
 			type: 'component'
 		}
 	]
