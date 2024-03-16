@@ -221,5 +221,12 @@
 		"name": "Yozuli",
 		"icon": "https://visage.surgeplay.com/face/190/23f41741211841db8284657dfa203432.png",
 		"link": "https://youtube.com/@Yozuli"
+	},
+	{
+		"name": "1stHowlerGamer",
+		"icon": "https://visage.surgeplay.com/face/190/1stHowlerGamer.png",
+		"creator": true,
+		"link": "https://youtube.com/@1stHowlerGamer",
+		"youtube": "https://youtube.com/@1stHowlerGamer"
 	}
 ]
