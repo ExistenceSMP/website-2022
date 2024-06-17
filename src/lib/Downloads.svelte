@@ -75,6 +75,16 @@
 				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectCreateS1.zip'
 			}
 		}
+		{
+			name: 'Project Better Than Adventure',
+			icon: '/images/logos/existence-smp-project-create-logo.png',
+			download: {
+				version: 'Beta 1.7.3 (Modded - Bundled)',
+				title: '.zip (984.5 MB)',
+				date: '2024-06-17',
+				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectBTAS1.zip'
+			}
+		}
 	];
 
 	const communityWorlds = [
