@@ -36,7 +36,7 @@
 
 	const projectWorlds = [
 		{
-			name: 'Project Hardcore S1',
+			name: 'Project Hardcore',
 			icon: '/images/logos/existence-project-hardcore-s1-logo.png',
 			download: {
 				version: '1.13.2',
