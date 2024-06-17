@@ -77,7 +77,7 @@
 		},
 		{
 			name: 'Project Better Than Adventure',
-			icon: '/images/logos/existence-smp-project-create-logo.png',
+			icon: '/images/logos/existence-smp-project-bta-logo.png',
 			download: {
 				version: 'Beta 1.7.3 (Modded - Bundled)',
 				title: '.zip (984.5 MB)',
