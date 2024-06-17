@@ -74,7 +74,7 @@
 				date: '2023-06-05',
 				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectCreateS1.zip'
 			}
-		}
+		},
 		{
 			name: 'Project Better Than Adventure',
 			icon: '/images/logos/existence-smp-project-create-logo.png',
