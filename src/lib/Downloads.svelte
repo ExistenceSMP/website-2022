@@ -1,6 +1,29 @@
 <script>
 	import WorldCard from '$lib/util/WorldCard.svelte';
 
+	const communityWorlds = [
+		{
+			name: 'Community Server 1',
+			icon: '/images/logos/existence-smp-community-server-s1-logo.png',
+			download: {
+				version: '1.17.1',
+				title: '.zip (2.63 GB)',
+				date: '2021-12-01',
+				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPCommunityS1.zip'
+			}
+		},
+		{
+			name: 'Community Server 2',
+			icon: '/images/logos/existence-smp-community-server-s2-logo.png',
+			download: {
+				version: '1.20.4',
+				title: '.zip (5.7 GB)',
+				date: '2024-07-21',
+				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPCommunityS2.zip'
+			}
+		}
+	];
+
 	const legacyWorlds = [
 		{
 			name: 'Legacy S1',
@@ -87,19 +110,6 @@
 		}
 	];
 
-	const communityWorlds = [
-		{
-			name: 'Community Server 1',
-			icon: '/images/logos/existence-smp-community-server-s1-logo.png',
-			download: {
-				version: '1.17.1',
-				title: '.zip (2.63 GB)',
-				date: '2021-12-01',
-				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPCommunityS1.zip'
-			}
-		}
-	];
-
 	const modpacks = [
 		{
 			name: 'Project Create',
@@ -112,10 +122,21 @@
 			}
 		}
 	];
+
 </script>
 
 <div class="wrapper">
 	<div class="layout">
+
+		<section>
+			<h2>Community Server Worlds</h2>
+			<div class="worlds">
+				{#each communityWorlds as world}
+					<WorldCard {world} />
+				{/each}
+			</div>
+		</section>
+
 		<section>
 			<h2>Legacy Worlds</h2>
 			<div class="worlds">
@@ -125,19 +146,10 @@
 			</div>
 		</section>
 
-		<section>
+		<section class="full-width">
 			<h2>Project Worlds</h2>
 			<div class="worlds">
 				{#each projectWorlds as world}
-					<WorldCard {world} />
-				{/each}
-			</div>
-		</section>
-
-		<section class="full-width">
-			<h2>Community Server Worlds</h2>
-			<div class="worlds">
-				{#each communityWorlds as world}
 					<WorldCard {world} />
 				{/each}
 			</div>
@@ -151,6 +163,7 @@
 				{/each}
 			</div>
 		</section>
+		
 	</div>
 </div>
 
