@@ -28,6 +28,11 @@ export function setBackgroundColor(
 	[data-theme="light"] {
 		${colorStr}
 	}
+	[data-theme="dark"] {
+		.anchor, .page-content a {
+			color: ${themeColor};
+		}
+	}
 	@media (prefers-color-scheme: light) {
 		[data-theme="system"] {
 			${colorStr}
