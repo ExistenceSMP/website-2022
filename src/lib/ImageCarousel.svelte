@@ -1,8 +1,8 @@
 <script>
 	const images = [
+		'background-community-server-s2.jpg',
 		'background-community-server-s1.jpg',
 		'background-project-keystone.jpg',
-		'background-community-server-s2.jpg',
 		'background-season-1.jpg',
 		'background-project-amplified.jpg',
 		'background-season-2.jpg',
