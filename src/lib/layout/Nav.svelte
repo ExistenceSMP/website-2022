@@ -8,8 +8,12 @@
 	<div class="nav-wrapper">
 		<nav>
 			<a sveltekit:prefetch class:active={$page.url.pathname === '/'} href="/"> About </a>
-			<a sveltekit:prefetch class:active={$page.url.pathname === '/server'} href="/server">
-				Server
+			<a
+				sveltekit:prefetch
+				class:active={$page.url.pathname === '/server/new-dawn'}
+				href="/server/new-dawn"
+			>
+				Project New Dawn
 			</a>
 			<a sveltekit:prefetch class:active={$page.url.pathname === '/podcast'} href="/podcast">
 				Podcast
