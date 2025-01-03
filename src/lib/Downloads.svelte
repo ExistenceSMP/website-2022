@@ -122,12 +122,10 @@
 			}
 		}
 	];
-
 </script>
 
 <div class="wrapper">
 	<div class="layout">
-
 		<section>
 			<h2>Community Server Worlds</h2>
 			<div class="worlds">
@@ -163,7 +161,6 @@
 				{/each}
 			</div>
 		</section>
-		
 	</div>
 </div>
 
