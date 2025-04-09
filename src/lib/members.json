@@ -182,7 +182,7 @@
 	},
 	{
 		"name": "mcnugggzs",
-		"icon": "https://visage.surgeplay.com/face/190/af3ab7ff06b74120ad1300faf3641509",
+		"icon": "https://vzge.me/face/190/af3ab7ff06b74120ad1300faf3641509",
 		"link": "https://twitter.com/mcnugggzs",
 		"twitter": "https://twitter.com/mcnugggzs",
 		"youtube": "https://www.youtube.com/channel/UCkuiFMQt_AGH5ZKmXkR86tA",
@@ -215,11 +215,11 @@
 	},
 	{
 		"name": "Jippertje",
-		"icon": "https://visage.surgeplay.com/face/190/f1f46e585d8f4bdda4081430da771cb7.png"
+		"icon": "https://vzge.me/face/190/f1f46e585d8f4bdda4081430da771cb7.png"
 	},
 	{
 		"name": "Yozuli",
-		"icon": "https://visage.surgeplay.com/face/190/23f41741211841db8284657dfa203432.png",
+		"icon": "https://vzge.me/face/190/23f41741211841db8284657dfa203432.png",
 		"link": "https://youtube.com/@Yozuli"
 	},
 	{
@@ -228,5 +228,9 @@
 		"creator": true,
 		"link": "https://youtube.com/@1stHowlerGamer",
 		"youtube": "https://youtube.com/@1stHowlerGamer"
+	},
+	{
+		"name": "Pure6198",
+		"icon": "https://vzge.me/face/190/440f1108e48b4e7e8da46f01aaa58579.png"
 	}
 ]
