@@ -32,8 +32,8 @@
 			>
 		</div>
 	</SocialButton>
-	<SocialButton platform="twitter" href="https://twitter.com/ExistenceSMP">
-		<span>Twitter @ExistenceSMP</span>
+	<SocialButton platform="twitter" href="https://bsky.app/profile/existencesmp.com">
+		<span>BlueSky @existence.smp</span>
 		<div class="icon">
 			<svg
 				id="Logo_FIXED"
