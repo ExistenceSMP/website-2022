@@ -164,7 +164,7 @@
 		</section>
 
 		<section class="full-width">
-			<h2>Community Assets</h2>
+			<h2>Branding Assets</h2>
 			<ExternalLink href="/downloads/assets" target="_blank">Google Drive</ExternalLink>
 		</section>
 	</div>
