@@ -21,12 +21,8 @@
 			--color: #d72523;
 		}
 
-		&[data-platform='twitter'] {
-			--color: #5ea9dd;
-
-			:global(svg) {
-				transform: scale(1.6);
-			}
+		&[data-platform='bluesky'] {
+			--color: #0085ff;
 		}
 
 		&[data-platform='discord'] {
