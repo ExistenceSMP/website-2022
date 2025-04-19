@@ -1,4 +1,5 @@
 <script>
+	import ExternalLink from '$lib/util/ExternalLink.svelte';
 	import WorldCard from '$lib/util/WorldCard.svelte';
 
 	const communityWorlds = [
@@ -160,6 +161,11 @@
 					<WorldCard {world} download={'modpack'} />
 				{/each}
 			</div>
+		</section>
+
+		<section class="full-width">
+			<h2>Branding Assets</h2>
+			<ExternalLink href="/downloads/assets" target="_blank">Google Drive</ExternalLink>
 		</section>
 	</div>
 </div>

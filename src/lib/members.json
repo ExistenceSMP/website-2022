@@ -165,14 +165,14 @@
 		"link": "/"
 	},
 	{
-		"name": "iGalaxy",
+		"name": "igalaxy",
 		"link": "https://link.igalaxy.dev/twitter",
 		"creator": true,
 		"icon": "/images/creators/galaxy.png",
 		"youtube": "https://link.igalaxy.dev/youtube",
-		"youtube-text": "iGalaxy",
+		"youtube-text": "igalaxy",
 		"twitter": "https://link.igalaxy.dev/twitter",
-		"twitter-text": "_iGalaxyYT",
+		"twitter-text": "_igalaxyYT",
 		"twitch": "https://link.igalaxy.dev/twitch",
 		"twitch-text": "igalaxyofficial"
 	},
