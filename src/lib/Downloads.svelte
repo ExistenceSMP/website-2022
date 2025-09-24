@@ -98,26 +98,6 @@
 				date: '2023-06-05',
 				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectCreateS1.zip'
 			}
-		},
-		{
-			name: 'Project Better Than Adventure',
-			icon: '/images/logos/existence-smp-project-bta-logo.png',
-			download: {
-				version: 'Beta 1.7.3 (Modded - Bundled)',
-				title: '.zip (984.5 MB)',
-				date: '2024-06-17',
-				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectBTAS1.zip'
-			}
-		},
-		{
-			name: 'Project New Dawn',
-			icon: '/images/logos/existence-logo-new-dawn.png',
-			download: {
-				version: '1.21.3 (Modded - Bundled)',
-				title: '.zip (5.87 GB)',
-				date: '2025-04-19',
-				url: 'https://fs.wii.mom/worlds/ExistenceSMPProjectNewDawnS1.zip?k=VCdT0AlhpRn9_p41'
-			}
 		}
 	];
 
@@ -126,10 +106,30 @@
 			name: 'Project Create',
 			icon: '/images/logos/existence-smp-project-create-logo.png',
 			download: {
-				version: '1.18.2',
+				version: '1.18.2 (Modded)',
 				title: '.mrpack (2.2 GB, worlds included)',
 				date: '2023-06-05',
 				url: 'https://downloads.existencesmp.com/files/modpacks/ExistenceSMPProjectCreateS1.mrpack'
+			}
+		},
+		{
+			name: 'Project Better Than Adventure',
+			icon: '/images/logos/existence-smp-project-bta-logo.png',
+			download: {
+				version: 'Beta 1.7.3 (Modded)',
+				title: '.zip (Prism Launcher) [984.5 MB, worlds included]',
+				date: '2024-06-17',
+				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectBTAS1.zip'
+			}
+		},
+		{
+			name: 'Project New Dawn',
+			icon: '/images/logos/existence-logo-new-dawn.png',
+			download: {
+				version: '1.21.3 (Modded)',
+				title: '.zip (Prism Launcher) [5.87 GB, worlds included]',
+				date: '2025-04-19',
+				url: 'https://fs.wii.mom/worlds/ExistenceSMPProjectNewDawnS1.zip?k=VCdT0AlhpRn9_p41'
 			}
 		}
 	];
@@ -171,6 +171,9 @@
 					<WorldCard {world} download={'modpack'} />
 				{/each}
 			</div>
+			<p>
+				<i>Some Project Worlds are only available in bundled Modpacks below.</i>
+			</p>
 		</section>
 
 		<section class="full-width">
