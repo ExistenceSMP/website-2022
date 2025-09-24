@@ -117,7 +117,7 @@
 			icon: '/images/logos/existence-smp-project-bta-logo.png',
 			download: {
 				version: 'Beta 1.7.3 (Modded - Bundled)',
-				title: '.zip (Prism Launcher) [984.5 MB]',
+				title: '.zip* (984.5 MB)',
 				date: '2024-06-17',
 				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectBTAS1.zip'
 			}
@@ -127,7 +127,7 @@
 			icon: '/images/logos/existence-logo-new-dawn.png',
 			download: {
 				version: '1.21.3 (Modded - Bundled)',
-				title: '.zip (Prism Launcher) [5.87 GB]',
+				title: '.zip* (5.87 GB)',
 				date: '2025-04-19',
 				url: 'https://fs.wii.mom/worlds/ExistenceSMPProjectNewDawnS1.zip?k=VCdT0AlhpRn9_p41'
 			}
@@ -162,6 +162,9 @@
 					<WorldCard {world} />
 				{/each}
 			</div>
+			<p>
+				<i>Some Project Worlds are only available in bundled Modpacks below.</i>
+			</p>
 		</section>
 
 		<section class="full-width">
@@ -172,7 +175,7 @@
 				{/each}
 			</div>
 			<p>
-				<i>Some Project Worlds are only available in bundled Modpacks below.</i>
+				<i>*Prism Launcher Instance</i>
 			</p>
 		</section>
 
