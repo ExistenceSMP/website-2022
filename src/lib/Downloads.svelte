@@ -129,7 +129,7 @@
 				version: '1.21.3 (Modded - Bundled)',
 				title: '.zip* (5.87 GB)',
 				date: '2025-04-19',
-				url: 'https://fs.wii.mom/worlds/ExistenceSMPProjectNewDawnS1.zip?k=VCdT0AlhpRn9_p41'
+				url: 'https://drive.google.com/uc?export=download&id=1SAUJaI8I1rKcITkd-j-R02dGDLkQZ3Hp'
 			}
 		}
 	];
