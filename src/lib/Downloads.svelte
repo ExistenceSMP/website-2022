@@ -10,7 +10,7 @@
 				version: '1.17.1',
 				title: '.zip (2.63 GB)',
 				date: '2021-12-01',
-				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPCommunityS1.zip'
+				url: 'https://drive.google.com/file/d/140VNH39Hk63Rj6R35dYt-ONmRwEIkYej/view?usp=drive_link'
 			}
 		},
 		{
@@ -20,7 +20,7 @@
 				version: '1.20.4',
 				title: '.zip (5.7 GB)',
 				date: '2024-07-21',
-				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPCommunityS2.zip'
+				url: 'https://drive.google.com/file/d/1aYbRpMI8u9VrimzbiBSjEDPVvbjJv8B6/view?usp=drive_link'
 			}
 		}
 	];
@@ -33,7 +33,7 @@
 				version: '1.12.2',
 				title: '.zip (2.61 GB)',
 				date: '2017-08-04',
-				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPS1.zip'
+				url: 'https://drive.google.com/file/d/1l_4cOx9fu0Y78DUy5TX2kO-_GgbroctU/view?usp=drive_link'
 			}
 		},
 		{
@@ -43,7 +43,7 @@
 				version: '1.13.2',
 				title: '.zip (2.59 GB)',
 				date: '2019-03-16',
-				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPS2.zip'
+				url: 'https://drive.google.com/file/d/16iE89Ej2ckLlFrzHK-XftryyJsfA77fR/view?usp=drive_link'
 			}
 		},
 		{
@@ -53,7 +53,7 @@
 				version: '1.15.2',
 				title: '.zip (2.15 GB)',
 				date: '2020-03-18',
-				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPS3.zip'
+				url: 'https://drive.google.com/file/d/1BwZlI2EcmZ2mn1mqwF7BJdH6Keg-zbC2/view?usp=drive_link'
 			}
 		}
 	];
@@ -66,7 +66,7 @@
 				version: '1.13.2',
 				title: '.zip (148 MB)',
 				date: '2019-04-24',
-				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectHardcoreS1.zip'
+				url: 'https://drive.google.com/file/d/1SRm3PU2S1oyBfVhK8YQWBUo4Dr6ycVDt/view?usp=drive_link'
 			}
 		},
 		{
@@ -76,7 +76,7 @@
 				version: '1.15.2',
 				title: '.zip (3.4 GB)',
 				date: '2020-06-27',
-				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectKeystoneS1.zip'
+				url: 'https://drive.google.com/file/d/1AUTilIodIeoKT0FG7lZgmNwpJ1-gI7JG/view?usp=drive_link'
 			}
 		},
 		{
@@ -86,7 +86,7 @@
 				version: '1.18.1',
 				title: '.zip (951.6 MB)',
 				date: '2022-03-16',
-				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectAmplifiedS1.zip'
+				url: 'https://drive.google.com/file/d/1lasla1xW-pN-3VHrhqpESQge0FJRzr43/view?usp=drive_link'
 			}
 		},
 		{
@@ -96,7 +96,7 @@
 				version: '1.18.2 (Modded)',
 				title: '.zip (1.9 GB)',
 				date: '2023-06-05',
-				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectCreateS1.zip'
+				url: 'https://drive.google.com/file/d/1S8rED3Bor2KhPSqrTYcpNsNHs5RuW4WF/view?usp=drive_link'
 			}
 		}
 	];
@@ -109,7 +109,7 @@
 				version: '1.18.2 (Modded - Bundled)',
 				title: '.mrpack (2.2 GB)',
 				date: '2023-06-05',
-				url: 'https://downloads.existencesmp.com/files/modpacks/ExistenceSMPProjectCreateS1.mrpack'
+				url: 'https://drive.google.com/file/d/1yo5gCe8kZXTfynVIPtteEwqTOI62rnJc/view?usp=drive_link'
 			}
 		},
 		{
@@ -119,7 +119,7 @@
 				version: 'Beta 1.7.3 (Modded - Bundled)',
 				title: '.zip* (984.5 MB)',
 				date: '2024-06-17',
-				url: 'https://downloads.existencesmp.com/files/worlds/ExistenceSMPProjectBTAS1.zip'
+				url: 'https://drive.google.com/file/d/12Ta9JTfxDhtecv5iNWxShAQiyeUgtzKY/view?usp=drive_link'
 			}
 		},
 		{
@@ -129,7 +129,7 @@
 				version: '1.21.3 (Modded - Bundled)',
 				title: '.zip* (5.87 GB)',
 				date: '2025-04-19',
-				url: 'https://drive.google.com/uc?export=download&id=1SAUJaI8I1rKcITkd-j-R02dGDLkQZ3Hp'
+				url: 'https://drive.google.com/file/d/1eFf6_6YLaeBjV3vTqsinqH1_b_u8dQrQ/view?usp=drive_link'
 			}
 		}
 	];
