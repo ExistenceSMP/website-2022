@@ -131,6 +131,16 @@
 				date: '2025-04-19',
 				url: 'https://drive.google.com/file/d/1eFf6_6YLaeBjV3vTqsinqH1_b_u8dQrQ/view?usp=drive_link'
 			}
+		},
+		{
+			name: 'Project Create 2',
+			icon: '/images/logos/existence-project-create-2-logo.png',
+			download: {
+				version: '1.21.1 (Modded - Mods Only, No Worlds)',
+				title: '.zip*† (98.9kB)',
+				date: '2026-08-15',
+				url: 'https://drive.google.com/file/d/1eTJm2B3VXPrSvephbvUGb1WehmdUVRZk/view?usp=drive_link'
+			}
 		}
 	];
 </script>
@@ -176,6 +186,9 @@
 			</div>
 			<p>
 				<i>*Prism Launcher Instance</i>
+			</p>
+			<p>
+				<i>†Auto-updating</i>
 			</p>
 		</section>
 
